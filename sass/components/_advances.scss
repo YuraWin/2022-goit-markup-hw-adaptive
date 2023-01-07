@@ -4,7 +4,11 @@
 }
 
 .advances-list {
-  display: flex;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 .advances-list__title {
   color: $secondary-color-text;
@@ -22,21 +26,44 @@
 }
 
 .advances-list__item {
-  width: 270px;
+  max-width: 450px;
 
-  & + & {
-    margin-left: 30px;
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+    margin: 15px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+  }
+  &:not(:last-child) {
+    @media screen and (max-width: calc($tablet-1px)) {
+      margin-bottom: 30px;
+    }
   }
 
   &::before {
     content: '';
-    display: inline-block;
-    width: 270px;
+    display: block;
+    max-width: 450px;
     height: 120px;
     margin-bottom: 30px;
     background-color: #f5f4fa;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 4px;
+
+    @media screen and (min-width: $mobile) {
+      width: 450px;
+    }
+    @media screen and (min-width: $tablet) {
+      width: 354px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 270px;
+    }
   }
 
   &.attention::before {
