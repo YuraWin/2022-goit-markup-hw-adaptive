@@ -1,0 +1,54 @@
+/* Advances  */
+.section--advances {
+  padding-bottom: 0px;
+}
+
+.advances-list {
+  display: flex;
+}
+.advances-list__title {
+  color: $secondary-color-text;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.advances-list__text {
+  margin: 0px;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.advances-list__item {
+  width: 270px;
+
+  & + & {
+    margin-left: 30px;
+  }
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #f5f4fa;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &.attention::before {
+    background-image: url(../images/antenna1.svg);
+  }
+  &.punctuality::before {
+    background-image: url(../images/clock1.svg);
+  }
+  &.planning::before {
+    background-image: url(../images/diagram1.svg);
+  }
+  &.modern::before {
+    background-image: url(../images/astronaut1.svg);
+  }
+}
