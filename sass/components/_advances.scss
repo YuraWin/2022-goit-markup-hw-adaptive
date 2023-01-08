@@ -1,6 +1,8 @@
 /* Advances  */
 .section--advances {
-  padding-bottom: 0px;
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 0px;
+  }
 }
 
 .advances-list {
@@ -39,7 +41,7 @@
     width: 270px;
   }
   &:not(:last-child) {
-    @media screen and (max-width: calc($tablet-1px)) {
+    @media screen and (max-width: ($tablet - 1px)) {
       margin-bottom: 30px;
     }
   }

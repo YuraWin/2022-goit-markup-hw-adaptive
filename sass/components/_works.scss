@@ -1,4 +1,10 @@
 /* Works */
+.section--works {
+  @media screen and (max-width: ($desktop - 1px)) {
+    display: none;
+  }
+}
+
 .works {
   position: relative;
   display: flex;

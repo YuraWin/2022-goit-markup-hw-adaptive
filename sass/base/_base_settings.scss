@@ -25,12 +25,17 @@ p {
 }
 
 .section {
-  padding: 94px 0px;
+  padding: 60px 0px;
+
+  @media screen and (min-width: $desktop) {
+    padding: 94px 0px;
+  }
 }
 
 .section--team {
   background-color: #f5f4fa;
 }
+
 .container {
   margin: 0px auto;
 
@@ -48,7 +53,11 @@ p {
 }
 
 .section-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 
   color: $secondary-color-text;
   font-weight: 700;
