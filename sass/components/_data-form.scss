@@ -11,10 +11,14 @@
 
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
 
   color: $secondary-color-text;
+
+  @media screen and (min-width: $desktop) {
+    line-height: 1.15;
+  }
 }
 .data-form__form-field {
   position: relative;
@@ -149,9 +153,13 @@
   margin-bottom: 30px;
 
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .data-form__resolution-link {
   color: $accent-color;
