@@ -26,10 +26,9 @@
   height: 609px;
   padding: 40px;
 
-  @media screen and (min-width: $mobile) {
-    width: 450px;
+  @media screen and (max-width: ($desktop - 1px)) {
+    max-width: 450px;
   }
-
   @media screen and (min-width: $desktop) {
     width: 528px;
     height: 581px;
