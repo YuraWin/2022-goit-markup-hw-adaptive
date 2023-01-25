@@ -250,7 +250,7 @@ p {
 @media screen and (max-width: 767px) {
   .menu-container {
     position: relative;
-    padding: 48px 40px;
+    padding: 48px 10px 48px 40px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -363,9 +363,9 @@ p {
 @media screen and (max-width: 767px) {
   .contact {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     -webkit-box-flex: 2;
         -ms-flex-positive: 2;
             flex-grow: 2;
@@ -397,7 +397,7 @@ p {
 
 @media screen and (max-width: 767px) {
   .contact__item + .contact__item {
-    margin-top: 32px;
+    margin-bottom: 32px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
