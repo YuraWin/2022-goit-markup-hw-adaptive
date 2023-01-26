@@ -132,15 +132,33 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="works">
             <li class="works__item">
-              <img class="works__image" src="./images/plan.jpg" alt="Планування" width="370" />
+              <img
+                class="works__image"
+                srcset="./images/plan.jpg 1x, ./images/plan@2x.jpg 2x"
+                src="./images/plan.jpg"
+                alt="Планування"
+                width="370"
+              />
               <h2 class="works__title">Десктопні додатки</h2>
             </li>
             <li class="works__item">
-              <img class="works__image" src="./images/work.jpg" alt="Робота" width="370" />
+              <img
+                class="works__image"
+                srcset="./images/work.jpg 370w, ./images/work@2x.jpg 740w"
+                sizes="370px"
+                src="./images/work.jpg"
+                alt="Робота"
+              />
               <h2 class="works__title">Мобільні додатки</h2>
             </li>
             <li class="works__item">
-              <img class="works__image" src="./images/test.jpg" alt="Аналіз" width="370" />
+              <img
+                class="works__image"
+                srcset="./images/test.jpg 1x, ./images/test@2x.jpg 2x"
+                src="./images/test.jpg"
+                alt="Аналіз"
+                width="370"
+              />
               <h2 class="works__title">Дизайнерські рішення</h2>
             </li>
           </ul>
@@ -154,9 +172,19 @@
             <li class="team-list__item">
               <img
                 class="team-list__foto"
+                srcset="
+                  ./images/igor-270.jpg    270w,
+                  ./images/igor-270@2x.jpg 540w,
+                  ./images/igor-354.jpg    354w,
+                  ./images/igor-354@2x.jpg 708w,
+                  ./images/igor-450.jpg    450w,
+                  ./images/igor-450@2x.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, 
+                (min-width: 768px) 354px, 
+                (min-width: 480px) 450px, 100vw "
                 src="./images/igor.jpg"
                 alt="Співробітник команди"
-                width="270"
               />
               <div class="team-list__props">
                 <h3 class="team-list__title">Ігор Дем'яненко</h3>
