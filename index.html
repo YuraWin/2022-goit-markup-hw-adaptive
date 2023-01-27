@@ -290,12 +290,12 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                class="team-list__foto"
-                src="./images/mikola.jpg"
-                alt="Співробітник команди"
-                width="270"
-              />
+              <picture>
+                <source srcset="./images/mikola-270.jpg" media="(min-width: 1200px)" />
+                <source srcset="./images/mikola-354.jpg" media="(min-width: 768px)" />
+                <source srcset="./images/mikola-450.jpg" media="(min-width: 480px)" />
+                <img class="team-list__foto" src="./images/mikola.jpg" alt="Співробітник команди" />
+              </picture>
               <div class="team-list__props">
                 <h3 class="team-list__title">Микола Тарасов</h3>
                 <p class="team-list__vocation">Marketing</p>
