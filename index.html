@@ -291,9 +291,21 @@
             </li>
             <li class="team-list__item">
               <picture>
-                <source srcset="./images/mikola-270.jpg" media="(min-width: 1200px)" />
-                <source srcset="./images/mikola-354.jpg" media="(min-width: 768px)" />
-                <source srcset="./images/mikola-450.jpg" media="(max-width: 767px)" />
+                <source
+                  srcset="./images/mikola-270.jpg 270w, ./images/mikola-270@2x.jpg 540w"
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 270px"
+                />
+                <source
+                  srcset="./images/mikola-354.jpg 354w, ./images/mikola-354@2x.jpg 708w"
+                  media="(min-width: 768px) and (max-width:1199px)"
+                  sizes="(min-width: 768px) 354px"
+                />
+                <source
+                  srcset="./images/mikola-450.jpg 450w, ./images/mikola-450@2x.jpg 900w"
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 451px) and (max-width: 767px) 450px, 100vw"
+                />
                 <img class="team-list__foto" src="./images/mikola.jpg" alt="Співробітник команди" />
               </picture>
               <div class="team-list__props">
