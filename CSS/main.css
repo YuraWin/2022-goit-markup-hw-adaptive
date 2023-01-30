@@ -680,6 +680,11 @@ p {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 767px) {
+  .advances-list__title {
+    text-align: center;
+  }
+}
 
 .advances-list__text {
   margin: 0px;
